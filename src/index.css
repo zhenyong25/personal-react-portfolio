@@ -1,4 +1,161 @@
+/* import from Google Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+* {
+    margin: 0; 
+    padding: 0; 
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* root variables */
+/* To define a root variable, we use the '--' prefix followed by a name and assign a value  */
+/* Once defined, we can use these variables ia any part of our CSS code by referencing them using the 'var()' function */
+:root{
+    --color-bg: #1f1f38; 
+    --color-bg-variant: #2c2c6c; 
+    --color-primary: #4db5ff; 
+    --color-primary-variant: rgba(77,181,255,0.4); 
+    --color-white: #fff; 
+    --color-light: rgba(255,255,255,0.6); 
+
+    --transition: all 400ms ease; 
+
+    /* all the container width */
+    --container-width-lg: 75%; 
+    --container-width-md: 86%; 
+    --container-width-sm: 90%; 
+}
+
+
+html{
+    /* to scroll through all the pages smoothly  */
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    /* removing the scroll bar  */
+    display: none;
+}
+
 body {
-    background: black; 
-    color: white; 
+    /* background: black; 
+    color: white;  */
+    font-family: 'Poppins', sans-serif;
+    background: var(--color-bg); 
+    color: var(--color-white); 
+    line-height: 1.7; 
+
+    /* provides background texture */
+    background-image: url(./assets/bg-texture.png)
+}
+
+/* GENERAL STYLES  */
+
+.container {
+    width: var(--container-width-lg); 
+
+    /* positioning in the middle horizontally */
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 500;
+}
+
+h1 {
+    /* rem = "root em" or "relative em" ; size relative to the root element  */
+    font-size: 2.5rem;
+}
+
+section{
+    margin-top: 8 rem;
+}
+
+section > h2, section > h5 {
+    text-align: center;
+    color: var(--color-light); 
+}
+
+section > h2 {
+    color: var(--color-primary); 
+    margin-bottom: 3rem;
+}
+
+.text-light {
+    color: var(--color-light); 
+}
+
+/* ANCHOR TAGS STYLING  */
+
+a {
+    color: var(--color-primary); 
+    transition: var(--transition);
+}
+
+a:hover{
+    color:var(--color-white); 
+}
+
+/* BUTTON STYLING  */
+
+.btn {
+    width: max-content; 
+    display: inline-block;
+    color: var(--color-primary); 
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary); 
+    transition: var(--transition); 
+}
+
+.btn:hover {
+    background: var(--color-white);
+    color: var(--color-bg); 
+    border-color: transparent;
+}
+
+.btn-primary {
+    background: var(--color-primary); 
+    color: var(--color-bg); 
+}
+
+/* IMAGE STYLING  */
+
+img {
+    display: block;
+    width: 100%;
+
+    /* controls how images are displayed within their containers */
+    object-fit: cover;
+}
+
+/* MEDIA QUERIES */
+/* To create responsive webpage */
+
+/* A) MEDIUM DEVICES */
+@media screen and (max-width: 1024px){
+    .container{
+        width: var(--container-width-md); 
+    }
+
+    section{
+        margin-top: 6rem;
+    }
+}
+
+/* B) SMALL DEVICES  */
+@media screen and (max-width: 600px){
+    .container{
+        width: var(--container-width-sm); 
+    }
+
+    section > h2{
+        margin-bottom: 2rem;
+    }
 }
