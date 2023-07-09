@@ -5,18 +5,23 @@ import {AiOutlineUser} from 'react-icons/ai'
 import {BiBook} from 'react-icons/bi'
 import {RiServiceLine} from 'react-icons/ri'
 import {BiMessageSquareDetail} from 'react-icons/bi'
+import {useState} from 'react'
 
+/* #about - goes to section with id = "about" */
 
 const Nav = () => {
+
+    // initial value is '#'
+    const [activeNav, setActiveNav] = useState('#home')
+
     return (
-    <nav>
-        {/* #about - goes to section with id = "about" */}
-        <a href="#myhomepage" className="active"><AiOutlineHome/></a>
-        <a href="#about"><AiOutlineUser/></a>
-        <a href="#experience"><BiBook/></a>
-        <a href="#portfolio"><RiServiceLine/></a>
-        <a href="#contacts"><BiMessageSquareDetail/></a>
-    </nav>
+        <nav>
+            <a href="#home" onClick={()=>setActiveNav('#')} className={activeNav==='#home'?'active':''}><AiOutlineHome/></a>
+            <a href="#about" onClick ={()=>setActiveNav('#about')} className={activeNav==='#about'?'active':''}><AiOutlineUser/></a>
+            <a href="#experience" onClick ={()=>setActiveNav('#experience')} className={activeNav==='#experience'?'active':''}><BiBook/></a>
+            <a href="#portfolio" onClick ={()=>setActiveNav('#portfolio')} className={activeNav==='#portfolio'?'active':''}><RiServiceLine/></a>
+            <a href="#contacts" onClick ={()=>setActiveNav('#contacts')} className={activeNav==='#contacts'?'active':''}><BiMessageSquareDetail/></a>  
+        </nav>
     )
 }
 
