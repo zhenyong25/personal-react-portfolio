@@ -73,7 +73,8 @@ h1 {
 }
 
 section{
-    margin-top: 8 rem;
+    margin-top: 8 rem; 
+    height: 100vh;
 }
 
 section > h2, section > h5 {
@@ -150,6 +151,7 @@ img {
 }
 
 /* B) SMALL DEVICES  */
+/* viewport width is less than or equal to 600px */
 @media screen and (max-width: 600px){
     .container{
         width: var(--container-width-sm); 

@@ -73,4 +73,30 @@ header {
     font-size: 0.9rem;
 }
 
+/* MEDIA QUERIES */
+/* To create responsive webpage to be displayed on phones as well */
+
+/* A) MEDIUM DEVICES */
+@media screen and (max-width: 1024px){
+
+    /* 68vh means 68% of the view-port height */
+    header{
+        height: 68vh;
+    }
+}
+
+/* B) SMALL DEVICES  */
+@media screen and (max-width: 600px){
+    header{
+        height: 100vh;
+    }
+
+    /* not available in mobile phones  */
+    .header__socials, .scroll_down {
+        display: none;
+    }
+}
+
+
+
 
