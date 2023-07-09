@@ -136,7 +136,7 @@ img {
 }
 
 /* MEDIA QUERIES */
-/* To create responsive webpage */
+/* To create responsive webpage to be displayed on phones as well */
 
 /* A) MEDIUM DEVICES */
 @media screen and (max-width: 1024px){
