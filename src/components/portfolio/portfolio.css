@@ -20,14 +20,24 @@
 .portfolio__item-image {
     border-radius: 1.5rem;
     overflow: hidden;
+    height: 10rem;
+    width: 15rem;
 }
 
-.portfolio__item h3 {
+.fit-image {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.portfolio__item h4 {
     margin: 1.2rem 0 2rem; 
+    text-align: center;
 }
 
 .portfolio__item-cta {
     display: flex;
+    justify-content: center;
     gap: 1rem; 
     margin-bottom: 1rem; 
 }

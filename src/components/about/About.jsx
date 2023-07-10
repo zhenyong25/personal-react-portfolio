@@ -1,10 +1,10 @@
 import React from "react";
 import './about.css';  
-import ME from "../../assets/profile_pic.png"
+import ME from "../../assets/bali-profile-pic.jpg"
 
 // REACT ICONS
-import {FaAward} from 'react-icons/fa'
-import {FiUsers} from 'react-icons/fi'
+import {FaUniversity} from 'react-icons/fa'
+import {BsFillBookFill} from 'react-icons/bs'
 import {VscFolderLibrary} from 'react-icons/vsc'
 
 const About = () => {
@@ -26,17 +26,17 @@ const About = () => {
                     
                 {/* Card 1 */}
                     <article className="about__card">
-                        <FaAward className="about__icon"/>
-                        <h5>Experience</h5>
-                        <small>3+ Years Working</small>
+                        <FaUniversity className="about__icon"/>
+                        <h5>University</h5>
+                        <small>Nanyang Technological University (NTU), Singapore</small>
                     </article>
                 
 
                 {/* Card 2 */}
                     <article className="about__card">
-                        <FiUsers className="about__icon"/>
-                        <h5>Clients</h5>
-                        <small>200+ Worldwide</small>
+                        <BsFillBookFill className="about__icon"/>
+                        <h5>Degree</h5>
+                        <small>Electrical and Electronic Engineering (Specialized in Computer Engineering)</small>
                     </article>
  
 
@@ -44,17 +44,17 @@ const About = () => {
                     <article className="about__card">
                         <VscFolderLibrary className="about__icon"/>
                         <h5>Projects</h5>
-                        <small>80+ Completed Projects</small>
+                        <small>10+ Completed Projects</small>
                     </article>
                 </div>
 
                 {/* Just type "lorem" */}
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis natus ab provident quam, 
-                    tempora accusamus odio vel, illo reiciendis, optio hic facilis voluptatem! Deserunt vel quasi 
-                    aliquid sapiente veniam itaque?
+                    Beyond my curriculum, I am passionate about Business Management, Investments (Stocks and Cryptocurrency) and 
+                    Blockchain Technologies (DeFi, GameFi, NFT, Web3, Metaverse). Being a fast learner, I'm able to adapt and respond quickly to situations. 
+                    I'm always on the lookout to improve technical skills and soft skills, face new challenges and meet new people.
                 </p>
-                <a href="#contact" className="btn btn-primary">Let's Talk</a>
+                
             </div>
         </div>
 
