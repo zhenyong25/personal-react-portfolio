@@ -1,9 +1,9 @@
 header {
-    height: 100vh; 
     padding-top: 7rem;
+    height: 100vh;
 
     /* clips or hides any content that exceeds the dimensions of the element's box */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .header__container {
@@ -12,6 +12,10 @@ header {
 
     /* the element is positioned relative to its normal position in the document flow */
     position: relative; 
+}
+
+.header__intro{
+    padding-top: 1.5rem;
 }
 
 /* CTA */
@@ -35,12 +39,13 @@ header {
     gap: 0.8rem; 
     position: absolute;
     left: 0;
+    bottom: 3rem; 
 }
 
 
 /* ::after pseudo=element is often used to add decorative elements, icons or additional text after an element  */
 .header__socials::after{
-    content:''; 
+    content:""; 
     width: 1px;
     height: 2rem;
     background: var(--color-primary) ;
@@ -55,7 +60,8 @@ header {
 
     /* positioning */
     position: absolute;
-    left: 35%; 
+    left: 50%;     
+    transform: translateX(-50%); 
 
     margin-top: 2rem; 
     border-radius: 4rem 4rem 0 0; 
@@ -92,7 +98,7 @@ header {
     }
 
     /* not available in mobile phones  */
-    .header__socials, .scroll_down {
+    .header__socials, .scroll__down {
         display: none;
     }
 }

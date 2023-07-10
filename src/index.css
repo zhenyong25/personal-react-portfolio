@@ -88,6 +88,7 @@ section > h2 {
 
 section > h5 {
     margin-top: 5rem; 
+    padding-top: 1.5rem;
 }
 
 .text-light {
@@ -156,6 +157,7 @@ img {
 /* B) SMALL DEVICES  */
 /* viewport width is less than or equal to 600px */
 @media screen and (max-width: 600px){
+    
     .container{
         width: var(--container-width-sm); 
     }

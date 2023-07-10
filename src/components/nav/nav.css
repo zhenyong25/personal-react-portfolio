@@ -1,20 +1,23 @@
 nav {
     /* block styling */
     background: rgba(0,0,0,0.3); 
-    width: max-content;  
-    display: block;
+    width: max-content;   
+    /* display: block; */
     padding: 0.5rem 1.7rem; 
 
     /* DEBUG1: UNABLE TO SHOW NAV BAR WHEN EXCEEDS 1024PX SCREEN WIDTH */
-    z-index: 5;   
+    z-index: 9999;    
     /* the position is not affected by scrolling or the position of other element */
-    position: fixed;  
-    left: 50%;      
+    position: fixed;   
+    left: 50%; 
+    bottom: 4%;       
     /* used to mvoe an element horizontally along the X-axis by a percentage of its own width, relative to its original position */
-    transform: translateX(-50%);    
+    transform: translateX(-50%);  
+     
+
 
     /* icon styling */
-    display: flex;
+    display: flex; 
     gap: 0.8rem; 
     border-radius: 3rem;
     backdrop-filter: blur(15px);    

@@ -23,6 +23,7 @@ const Nav = () => {
             <a href="#contacts" onClick ={()=>setActiveNav('#contacts')} className={activeNav==='#contacts'?'active':''}><BiMessageSquareDetail/></a>  
         </nav>
     )
+    //testing
 }
 
 export default Nav;
