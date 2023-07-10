@@ -86,6 +86,10 @@ section > h2 {
     margin-bottom: 3rem;
 }
 
+section > h5 {
+    margin-top: 5rem; 
+}
+
 .text-light {
     color: var(--color-light); 
 }

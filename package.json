@@ -1,8 +1,5 @@
 {
   "name": "personal-react-portfolio",
-  
-  "homepage":"https://zhenyong-portfolio.com",
-
   "version": "0.1.0",
   "private": true,
   "dependencies": {
