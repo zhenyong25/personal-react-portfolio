@@ -1,10 +1,73 @@
 import React from "react";
 import './contact.css';  
+import {MdOutlineEmail} from 'react-icons/md';
+
+// INSTALL EMAILJS
+// npm install emailjs-com --save
+import { useRef } from 'react';
+import emailjs from 'emailjs-com'; 
 
 const Contact = () => {
+
+    // FORM SUBMISSION
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        // SERVICE ID - EMAIL SERVICES ; TEMPLATE ID - EMAIL TEMPLATES ; PUBLIC KEY - ACCOUNT 
+        emailjs.sendForm('service_kr04quu', 'template_1h4ntyp', form.current, '-lkoliIHOfeEIJ9gK')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+        
+        //  RESET CONTENT
+          e.target.reset(); 
+      };
+
+    // MAIN CONTACTS 
     return(
         <section id="contacts">
-            Contacts
+            <h5>Get In Touch</h5>
+            <h2>Contact Me</h2>
+
+            <div className="container contact__container">
+                <div className="contact__options">
+
+                    <article className="contact_option">
+                        <MdOutlineEmail className='contact__option-icon'/>
+                        <h4>Email</h4>
+                        <h5>zhenyong25@gmail.com</h5>
+                        <a href="mailto:zhenyong25@gmail.com" alt="" target="_blank" rel="noreferrer">Send a message</a>
+                    </article>
+
+                    <article className="contact_option">
+                        <MdOutlineEmail className='contact__option-icon'/>
+                        <h4>Email</h4>
+                        <h5>zhenyong25@gmail.com</h5>
+                        <a href="https://m.me/shoon.zhenyong.1" alt="" target="_blank" rel="noreferrer">Send a message</a>
+                    </article>
+
+                    <article className="contact_option">
+                        <MdOutlineEmail className='contact__option-icon'/>
+                        <h4>Email</h4>
+                        <h5>zhenyong25@gmail.com</h5>
+                        <a href="https://api.whatsapp.com/send?phone" alt="" target="_blank" rel="noreferrer">Send a message</a>
+                    </article>
+                </div>
+
+                {/* END OF CONTACT OPTIONS */}
+                <form ref={form} onSubmit={sendEmail}>
+                    <input type="text" name='name' placeholder='Your Full Name' required />
+                    <input type="email" name="email" placeholder='Your Email' required/>
+                    <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
+                    <button type='submit' className="btn btn-primary">Send message</button>
+                </form>
+                
+            </div>
+
         </section>
     )
 }
