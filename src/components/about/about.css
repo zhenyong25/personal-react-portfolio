@@ -49,13 +49,13 @@
 }
 
 /* CARDS CONTENT */
-.about__icon{
+.about__icon {
     color: var(--color-primary);
     font-size: 1.4rem; 
     margin-bottom: 1rem;
 }
 
-.about__card h5{
+.about__card h5 {
     font-size: 0.95rem; 
 }
 
@@ -65,7 +65,7 @@
 }
 
 .about__content p {
-    margin: 2rem 0 2.65rem; 
+    margin: 1.2rem 0 2.65rem; 
     color: var(--color-light); 
 }
 

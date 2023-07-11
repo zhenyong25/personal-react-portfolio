@@ -49,11 +49,13 @@ const About = () => {
                 </div>
 
                 {/* Just type "lorem" */}
-                <p>
-                    Beyond my curriculum, I am passionate about Business Management, Investments (Stocks and Cryptocurrency) and 
-                    Blockchain Technologies (DeFi, GameFi, NFT, Web3, Metaverse). Being a fast learner, I'm able to adapt and respond quickly to situations. 
-                    I'm always on the lookout to improve technical skills and soft skills, face new challenges and meet new people.
-                </p>
+                <div className="personal__introduction">
+                    <p>
+                        I am passionate about Software Development, Blockchain Technologies, Investments and 
+                        Business Management. Being a fast learner, I'm able to adapt and respond quickly to situations. 
+                        I'm always on the lookout to improve my skillsets, face new challenges and meet new people.
+                    </p>
+                </div>
                 
             </div>
         </div>
