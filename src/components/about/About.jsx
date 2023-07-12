@@ -51,9 +51,6 @@ const About = () => {
                 {/* Just type "lorem" */}
                 <div className="personal__introduction">
                     <p>
-                        I am passionate about Software Development, Blockchain Technologies, Investments and 
-                        Business Management. Being a fast learner, I'm able to adapt and respond quickly to situations. 
-                        I'm always on the lookout to improve my skillsets, face new challenges and meet new people.
                     </p>
                 </div>
                 
