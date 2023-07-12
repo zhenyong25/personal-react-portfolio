@@ -1,14 +1,15 @@
 import React from "react";
 import './portfolio.css';  
 import ME from '../../assets/profile_pic.png'
+import img1 from '../../assets/personal-react-portfolio.png'
 
 const data = [
     {
         id: 1,
-        image: ME,
-        title: 'Final Year Project',
-        github: 'https://github.com/zhenyong25',
-        demo: 'https://github.com/zhenyong25'
+        image: img1,
+        title: 'Personal React Portfolio',
+        github: 'https://github.com/zhenyong25/personal-react-portfolio',
+        demo: 'https://zhenyong-react-portfolio.netlify.app/'
     },
     {
         id: 2,
@@ -19,6 +20,27 @@ const data = [
     },
     {
         id: 3,
+        image: ME,
+        title: 'Design and Innovation Project',
+        github: 'https://github.com/zhenyong25',
+        demo: 'https://github.com/zhenyong25'
+    },
+    {
+        id: 4,
+        image: ME,
+        title: 'Design and Innovation Project',
+        github: 'https://github.com/zhenyong25',
+        demo: 'https://github.com/zhenyong25'
+    },
+    {
+        id: 5,
+        image: ME,
+        title: 'Design and Innovation Project',
+        github: 'https://github.com/zhenyong25',
+        demo: 'https://github.com/zhenyong25'
+    },
+    {
+        id: 6,
         image: ME,
         title: 'Design and Innovation Project',
         github: 'https://github.com/zhenyong25',
