@@ -55,7 +55,7 @@ const Testimonials = () => {
             // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={40}
-                slidesPerView={1}
+                slidesPerView={2}
                 navigation
                 pagination={{ clickable: true }}
                 scrollbar={{ draggable: true }}
