@@ -44,6 +44,14 @@ const data = [
         github: 'https://github.com/zhenyong25',
         demo: 'https://github.com/zhenyong25'
     },
+    {
+        id: 5,
+        image: img1,
+        title: 'LemmaTree POCathon',
+        description: '',
+        github: 'https://github.com/zhenyong25',
+        demo: 'https://github.com/zhenyong25'
+    },
 ]
 
 
