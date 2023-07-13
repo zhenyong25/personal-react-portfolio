@@ -26,7 +26,7 @@ const Experience = () => {
                 scrollbar={{ draggable: true }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}>
-
+            
                 <SwiperSlide className="experience__card">
                     {/* FRONTEND DEVELOPMENT  */}
                     <h3>Frontend Development</h3>
@@ -133,7 +133,21 @@ const Experience = () => {
                             <BsPatchCheckFill className="experience__details-icon"/>
                             <div>
                                 <h4>Mongoose</h4>
-                                <small className='text-light'>Begineer</small>
+                                <small className='text-light'>Beginner</small>
+                            </div>
+                        </article>
+                        <article className="experience__details">
+                            <BsPatchCheckFill className="experience__details-icon"/>
+                            <div>
+                                <h4>Prisma</h4>
+                                <small className='text-light'>Beginner</small>
+                            </div>
+                        </article>
+                        <article className="experience__details">
+                            <BsPatchCheckFill className="experience__details-icon"/>
+                            <div>
+                                <h4>NextAuth</h4>
+                                <small className='text-light'>Beginner</small>
                             </div>
                         </article>
                     </div>
@@ -168,7 +182,7 @@ const Experience = () => {
                             <BsPatchCheckFill className="experience__details-icon"/>
                             <div>
                                 <h4>Metamask</h4>
-                                <small className='text-light'>Experienced</small>
+                                <small className='text-light'>Beginner</small>
                             </div>
                         </article>
                     </div>

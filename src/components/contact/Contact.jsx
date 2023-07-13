@@ -43,7 +43,7 @@ const Contact = () => {
                         <a href="mailto:zhenyong25@gmail.com" alt="" target="_blank" rel="noreferrer">Send a message</a>
                     </article>
 
-                    <article className="contact_option">
+                    {/* <article className="contact_option">
                         <MdOutlineEmail className='contact__option-icon'/>
                         <h4>Email</h4>
                         <h5>zhenyong25@gmail.com</h5>
@@ -55,7 +55,7 @@ const Contact = () => {
                         <h4>Email</h4>
                         <h5>zhenyong25@gmail.com</h5>
                         <a href="https://api.whatsapp.com/send?phone" alt="" target="_blank" rel="noreferrer">Send a message</a>
-                    </article>
+                    </article> */}
                 </div>
 
                 {/* END OF CONTACT OPTIONS */}
