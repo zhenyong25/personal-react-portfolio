@@ -1,6 +1,7 @@
 import React from "react";
 import './portfolio.css';  
 import img1 from '../../assets/personal-react-portfolio.png'
+import img2 from '../../assets/intouch-2.png'
 import img3 from '../../assets/pizza-delivery.png'
 
 // import Swiper core and required modules
@@ -22,7 +23,7 @@ const data = [
     },
     {
         id: 2,
-        image: img1,
+        image: img2,
         title: 'InTouch - Final Year Project',
         description: '',
         github: 'https://github.com/zhenyong25',
