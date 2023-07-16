@@ -1,8 +1,9 @@
 import React from "react";
 import './portfolio.css';  
 import img1 from '../../assets/portfolio-website.png'
-import img2 from '../../assets/intouch-2.png'
-import img3 from '../../assets/pizza-delivery.png'
+import img2 from '../../assets/intouch-app.png'
+import img3 from '../../assets/connectus-pizza.png'
+import img4 from '../../assets/lemmatree-pocathon.png'
 
 // import Swiper core and required modules
 import { Pagination, Navigation, Scrollbar, A11y } from 'swiper/modules';
@@ -32,26 +33,18 @@ const data = [
     {
         id: 3,
         image: img3,
-        title: 'Connectus - Pizza Delivery',
+        title: 'IE4717 - Pizza Delivery',
         description: '',
-        github: 'https://github.com/zhenyong25',
-        demo: 'https://github.com/zhenyong25'
+        github: 'https://github.com/zhenyong25/IE4717-Connectus-',
+        demo: 'https://connectus-pizza.netlify.app/'
     },
     {
         id: 4,
-        image: img1,
-        title: 'LemmaTree POCathon',
+        image: img4,
+        title: 'Lemmatree POCathon',
         description: '',
-        github: 'https://github.com/zhenyong25',
-        demo: 'https://github.com/zhenyong25'
-    },
-    {
-        id: 5,
-        image: img1,
-        title: 'LemmaTree POCathon',
-        description: '',
-        github: 'https://github.com/zhenyong25',
-        demo: 'https://github.com/zhenyong25'
+        github: 'https://github.com/zhenyong25/NTULemmaTreePOCathon-Finalist-Connectus',
+        demo: 'https://connectus-pizza.netlify.app/'
     },
 ]
 
