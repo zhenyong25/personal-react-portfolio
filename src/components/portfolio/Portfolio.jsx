@@ -4,6 +4,7 @@ import img1 from '../../assets/portfolio-website.png'
 import img2 from '../../assets/intouch-app.png'
 import img3 from '../../assets/connectus-pizza.png'
 import img4 from '../../assets/lemmatree-pocathon.png'
+import img5 from '../../assets/messenger-app-project.png'
 
 // import Swiper core and required modules
 import { Pagination, Navigation, Scrollbar, A11y } from 'swiper/modules';
@@ -16,6 +17,14 @@ import 'swiper/css/pagination';
 const data = [
     {
         id: 1,
+        image: img5,
+        title: 'Chat Application',
+        description: 'Created my personal react portfolio using HTML, CSS, JavaScript and React.js',
+        github: 'https://github.com/zhenyong25/real-time-messenger',
+        demo: 'https://zhenyong-react-portfolio.netlify.app/'
+    },
+    {
+        id: 2,
         image: img1,
         title: 'Personal React Portfolio',
         description: 'Created my personal react portfolio using HTML, CSS, JavaScript and React.js',
@@ -23,7 +32,7 @@ const data = [
         demo: 'https://zhenyong-react-portfolio.netlify.app/'
     },
     {
-        id: 2,
+        id: 3,
         image: img2,
         title: 'InTouch - Final Year Project',
         description: '',
@@ -31,7 +40,7 @@ const data = [
         demo: 'https://github.com/zhenyong25'
     },
     {
-        id: 3,
+        id: 4,
         image: img3,
         title: 'IE4717 - Pizza Delivery',
         description: '',
@@ -39,7 +48,7 @@ const data = [
         demo: 'https://connectus-pizza.netlify.app/'
     },
     {
-        id: 4,
+        id: 5,
         image: img4,
         title: 'Lemmatree POCathon',
         description: '',
