@@ -5,7 +5,6 @@ nav {
     /* display: block; */
     padding: 0.5rem 0.5rem; 
 
-    /* DEBUG1: UNABLE TO SHOW NAV BAR WHEN EXCEEDS 1024PX SCREEN WIDTH */
     z-index: 9999;    
     /* the position is not affected by scrolling or the position of other element */
     position: fixed;   
@@ -53,8 +52,9 @@ nav a.active{
 @media screen and (max-width: 600px){
     nav{
         flex-direction: row;
-        right: -13%; 
-        bottom: 5%;    
+        bottom: 5%;
+        left: 50%; /* Set the element's left to 50% */
+        transform: translateX(-50%);/* Shift the element left by 50% of its own width */   
     }
     
 }
