@@ -43,5 +43,19 @@ nav a.active{
     color: var(--color-bg)
 }   
 
-/* testing */
+/* A) MEDIUM DEVICES */
+@media screen and (max-width: 1024px){
+
+
+}
+
+/* B) SMALL DEVICES  */
+@media screen and (max-width: 600px){
+    nav{
+        flex-direction: row;
+        right: -13%; 
+        bottom: 5%;    
+    }
+    
+}
 

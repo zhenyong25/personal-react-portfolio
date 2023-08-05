@@ -69,6 +69,7 @@ const Portfolio = () => {
                         data.map(({id, image, title})=>{
                             return (
                                     <SwiperSlide key={id} className='portfolio__item'>
+                                        
                                         <div className="portfolio__item-image">
                                             <img src={image} alt="" className="fit-image"/>
                                         </div>
