@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import './experience.css'; 
 import {BsPatchCheckFill} from 'react-icons/bs' 
 
@@ -12,6 +12,35 @@ import 'swiper/css/pagination';
 
 
 const Experience = () => {
+    
+  const [slidesPerView, setSlidesPerView] = useState(2);
+
+  const updateSlidesPerView = () => {
+    // Define the breakpoint at which you want to change the slidesPerView value
+    const breakpoint = 768; // For example, for devices with width less than 768px
+
+    // Check the screen width and update the slidesPerView accordingly
+    if (window.innerWidth < breakpoint) {
+      setSlidesPerView(1);
+    } else {
+      setSlidesPerView(2);
+    }
+  };
+
+    useEffect(() => {
+        // Add event listener on component mount
+        window.addEventListener('resize', updateSlidesPerView);
+
+        // Call the function on component mount to set initial value
+        updateSlidesPerView();
+
+        // Remove event listener on component unmount
+        return () => {
+        window.removeEventListener('resize', updateSlidesPerView);
+        };
+    }, []);
+
+
     return(
         <section id="experience">
             <h5>What Skills I Have</h5>
@@ -20,7 +49,7 @@ const Experience = () => {
             <Swiper className="container experience__container"
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={40}
-                slidesPerView={2}
+                slidesPerView={slidesPerView}
                 navigation
                 pagination={{ clickable: true }}
                 scrollbar={{ draggable: true }}

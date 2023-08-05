@@ -1,4 +1,4 @@
-import React, { useState }  from "react";
+import React, { useState, useEffect }  from "react";
 import './portfolio.css';  
 import {data} from '../portfolio/portfolio-constants'
 
@@ -21,6 +21,33 @@ const Portfolio = () => {
     setModal(true);
   };
 
+  const [slidesPerView, setSlidesPerView] = useState(3);
+
+  const updateSlidesPerView = () => {
+    // Define the breakpoint at which you want to change the slidesPerView value
+    const breakpoint = 768; // For example, for devices with width less than 768px
+
+    // Check the screen width and update the slidesPerView accordingly
+    if (window.innerWidth < breakpoint) {
+      setSlidesPerView(1);
+    } else {
+      setSlidesPerView(3);
+    }
+  };
+
+    useEffect(() => {
+        // Add event listener on component mount
+        window.addEventListener('resize', updateSlidesPerView);
+
+        // Call the function on component mount to set initial value
+        updateSlidesPerView();
+
+        // Remove event listener on component unmount
+        return () => {
+        window.removeEventListener('resize', updateSlidesPerView);
+        };
+    }, []);
+
   const selectedItem = data.find((item) => item.id === selectedItemId);
 
     return(
@@ -31,7 +58,7 @@ const Portfolio = () => {
             <Swiper className="container portfolio__container"
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={40}
-                slidesPerView={3}
+                slidesPerView={slidesPerView}
                 navigation
                 pagination={{ clickable: true }}
                 scrollbar={{ draggable: true }}
