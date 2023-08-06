@@ -6,6 +6,7 @@ import ME from "../../assets/bali-profile-pic.jpg"
 import {FaUniversity} from 'react-icons/fa'
 import {BsFillBookFill} from 'react-icons/bs'
 import {VscFolderLibrary} from 'react-icons/vsc'
+import {MdOutlineTravelExplore} from 'react-icons/md'
 
 const About = () => {
     return(
@@ -36,7 +37,7 @@ const About = () => {
                     <article className="about__card">
                         <BsFillBookFill className="about__icon"/>
                         <h5>Degree</h5>
-                        <small>Electrical and Electronic Engineering (Specialized in Computer Engineering)</small>
+                        <small>Electrical and Electronic Engineering (Specialize in Computer Engineering)</small>
                     </article>
  
 
@@ -44,7 +45,14 @@ const About = () => {
                     <article className="about__card">
                         <VscFolderLibrary className="about__icon"/>
                         <h5>Projects</h5>
-                        <small>5+ Completed Projects</small>
+                        <small>5+ Completed Projects </small>
+                    </article>
+
+                {/* Card 4 */}
+                <article className="about__card">
+                        <MdOutlineTravelExplore className="about__icon"/>
+                        <h5>Hobby</h5>
+                        <small>Travel , Sports and enjoying watching movies !</small>
                     </article>
                 </div>
 

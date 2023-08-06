@@ -1,0 +1,17 @@
+.content {
+    margin-top: 2rem;
+}
+
+.work-done {
+    padding-bottom: 1.5rem;
+}
+
+.vertical-timeline-element-title{
+    color:var(--color-primary); 
+}
+
+.vertical-timeline-element-subtitle{
+    color:var(--color-light); 
+   padding-right: 0.5rem;
+}
+
