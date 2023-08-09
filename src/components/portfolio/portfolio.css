@@ -156,3 +156,34 @@ body.active-modal {
 .portfolio__item-cta > a {
     margin: 0 0.5rem; 
 }
+
+/* SELECTION BUTTON */
+.selection__buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem; 
+    padding: 1rem;
+}
+
+.selection__button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin: 0 0.5rem;
+}
+
+.selection__button:active {
+    background-color: var(--color-bg-variant); 
+    border-radius: 0.5rem;
+}
+
+.selection__button:hover {
+    background-color: var(--color-primary-variant);
+    cursor: pointer;
+}
+
+.selection__button__active {
+    background-color: var(--color-bg-variant);
+}
+
+
+

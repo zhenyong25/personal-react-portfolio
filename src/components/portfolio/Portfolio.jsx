@@ -11,6 +11,8 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import {AiOutlineClose} from 'react-icons/ai'
 
+import SelectButton from './SelectButton'
+
 const Portfolio = () => {
 
   const [modal, setModal] = useState(false);
@@ -54,6 +56,14 @@ const Portfolio = () => {
         <section id="portfolio">
             <h5>My Recent Work</h5>
             <h2>Portfolio</h2>
+
+            {/* BUTTON SELECTIONS */}
+            <ul className="selection__buttons">
+                <SelectButton project="Web App" ptype="web-app" />
+                <SelectButton project="Mobile App" ptype="mobile-app" />
+                <SelectButton project="Web 3" p-type="web3"/>
+                <SelectButton project="Others" p-type="others" />
+            </ul>
         
             <Swiper className="container portfolio__container"
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
