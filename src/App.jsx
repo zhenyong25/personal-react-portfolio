@@ -5,6 +5,7 @@ import About from "./components/about/About"
 import Experience from "./components/experience/Experience" 
 import Portfolio from "./components/portfolio/Portfolio" 
 import Internship from "./components/internships/internship";
+// import Leadership from "./components/leadership/Leadership"; 
 import Social from "./components/socials/Social";
 import Contact from "./components/contact/Contact" 
 import Footer from "./components/footer/Footer"
@@ -19,6 +20,7 @@ const App = () => {
             <Experience/>
             <Portfolio/>
             <Internship/>
+            {/* <Leadership/> */}
             <Social/>
             <Contact/>
             <Footer/>

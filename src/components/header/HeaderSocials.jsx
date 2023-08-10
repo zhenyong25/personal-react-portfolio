@@ -3,17 +3,17 @@
 import React from 'react'
 
 // react icons : https://react-icons.github.io/react-icons/
-import {BsLinkedin} from 'react-icons/bs'
 import {FaGithub} from 'react-icons/fa'
+import {FaHackerrank} from 'react-icons/fa'
 import {SiLeetcode} from 'react-icons/si'
 
 
 const HeaderSocials = () => {
   return (
     <div className='header__socials'>
-        <a href="https://www.linkedin.com/in/shoon-zhen-yong-4574a41aa/" target="_blank" rel="noreferrer"><BsLinkedin/></a>
         <a href="https://github.com/zhenyong25" target="_blank" rel="noreferrer"><FaGithub/></a>
         <a href="https://leetcode.com/BlueKnight/" target="_blank" rel="noreferrer"><SiLeetcode/></a>
+        <a href="https://www.hackerrank.com/ZhenYong" target="_blank" rel="noreferrer"><FaHackerrank/></a>
     </div>
   )
 }

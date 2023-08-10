@@ -3,6 +3,7 @@ import './footer.css';
 
 // REACT ICONS
 import {FaFacebookF} from 'react-icons/fa'
+import {BsDiscord} from 'react-icons/bs'
 import {BsInstagram} from 'react-icons/bs'
 import {BsLinkedin} from 'react-icons/bs'
 
@@ -25,6 +26,9 @@ const Footer = () => {
                 <a href="https://www.facebook.com/shoon.zhenyong.1/"><FaFacebookF/></a>
                 <a href="https://www.instagram.com/zhenyonggg/"><BsInstagram/></a>
                 <a href="https://www.linkedin.com/in/shoon-zhen-yong-4574a41aa/"><BsLinkedin/></a>
+
+                {/* need to access developer mode in advanved settings to get the id */}
+                <a href="https://discordapp.com/users/449124738996895746"><BsDiscord/></a>
             </div>
 
             <div className="footer__copyright">

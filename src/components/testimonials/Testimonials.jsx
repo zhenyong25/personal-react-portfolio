@@ -15,31 +15,8 @@ const data = [
     {
         avatar: ME,
         name: 'Zhen Yong',
-        review: 'Good'
-    },
-
-    {
-        avatar: ME,
-        name: 'Zhen Yong',
-        review: 'Good'
-    },
-
-    {
-        avatar: ME,
-        name: 'Zhen Yong',
-        review: 'Good'
-    },
-
-    {
-        avatar: ME,
-        name: 'Zhen Yong',
-        review: 'Good'
-    },
-
-    {
-        avatar: ME,
-        name: 'Zhen Yong',
-        review: 'Good'
+        position: '',
+        review: 'Good',
     },
 
 ]
@@ -64,7 +41,7 @@ const Testimonials = () => {
             >
 
                 {
-                    data.map(({avatar,name,review}, index)=>{
+                    data.map(({avatar,name,position,review}, index)=>{
                         return(
                             <SwiperSlide key={index} className="testimonial">
                                 <div className="client__avatar">
