@@ -58,12 +58,12 @@ const Portfolio = () => {
             <h2>Portfolio</h2>
 
             {/* BUTTON SELECTIONS */}
-            <ul className="selection__buttons">
+            {/* <ul className="selection__buttons">
                 <SelectButton project="Web App" ptype="web-app" />
                 <SelectButton project="Mobile App" ptype="mobile-app" />
                 <SelectButton project="Web 3" p-type="web3"/>
                 <SelectButton project="Others" p-type="others" />
-            </ul>
+            </ul> */}
         
             <Swiper className="container portfolio__container"
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
