@@ -1,6 +1,6 @@
 import React, { useState, useEffect }  from "react";
-import './portfolio.css';  
-import {data} from '../portfolio/portfolio-constants'
+import './leadership.css';  
+import {data} from '../leadership/leadership-constants'
 
 // import Swiper core and required modules
 import { Pagination, EffectCoverflow } from 'swiper/modules';
@@ -51,7 +51,7 @@ const Leadership = () => {
   const selectedItem = data.find((item) => item.id === selectedItemId);
 
     return(
-        <section id="portfolio">
+        <section id="leadership">
             <h5>Leadership Experiences</h5>
             <h2>Community Involvement</h2>
         
@@ -73,17 +73,16 @@ const Leadership = () => {
                     {
                         data.map(({id, image, title})=>{
                             return (
-                                    <SwiperSlide key={id} className='portfolio__item'>
-                                        
-                                        <div className="portfolio__item-image">
+                                    <SwiperSlide key={id} className='leadership__item'>
+                                        <div className="leadership__item-image">
                                             <img src={image} alt="" className="fit-image"/>
                                         </div>
-
+                                
                                         <h4>{title}</h4>
 
-                                        <div className="portfolio__item-cta">
+                                        <div className="leadership__item-cta">
                                             <button onClick={()=>{handleViewDetailsClick(id)}} className='btn btn-primary'>
-                                                View Details
+                                                    View Details
                                             </button>
                                         </div>
                                     </SwiperSlide>  
@@ -101,18 +100,7 @@ const Leadership = () => {
 
                             <div className="modal-title">{selectedItem.title}</div>
                             <div className="modal-description">{selectedItem.description}</div>
-                            <div className="modal-techstack">Created with</div>
                             <div className="modal-techstack-container">
-                                <ul className="techstack-icons">
-                                    {selectedItem.techstack.map((tech, index) => (
-                                        <li className="techstack-icon" key={index}>{tech}</li>
-                                    ))}
-                                </ul>
-                            </div>
-
-                            <div className="portfolio__item-cta">
-                                <a href={selectedItem.github} className='btn'>Github</a>
-                                <a href={selectedItem.demo} className='btn btn-primary' target="_blank" rel="noreferrer">Live Demo</a>
                             </div>
                         </div>                              
                 </div>

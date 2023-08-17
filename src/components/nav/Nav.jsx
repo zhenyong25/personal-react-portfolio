@@ -5,6 +5,7 @@ import {AiOutlineUser} from 'react-icons/ai'
 import {BiBook} from 'react-icons/bi'
 import {RiServiceLine} from 'react-icons/ri'
 import {BiMessageSquareDetail} from 'react-icons/bi'
+import {GoPeople} from 'react-icons/go'
 import {MdWork} from 'react-icons/md'
 
 import {useState} from 'react'
@@ -22,6 +23,7 @@ const Nav = () => {
             <a href="#experience" onClick ={()=>setActiveNav('#experience')} className={activeNav==='#experience'?'active':''}><BiBook/></a>
             <a href="#portfolio" onClick ={()=>setActiveNav('#portfolio')} className={activeNav==='#portfolio'?'active':''}><RiServiceLine/></a>
             <a href="#internship" onClick ={()=>setActiveNav('#internship')} className={activeNav==='#internship'?'active':''}><MdWork/></a>
+            <a href="#leadership" onClick ={()=>setActiveNav('#leadership')} className={activeNav==='#leadership'?'active':''}><GoPeople/></a>
             <a href="#contacts" onClick ={()=>setActiveNav('#contacts')} className={activeNav==='#contacts'?'active':''}><BiMessageSquareDetail/></a>  
         </nav>
     )
