@@ -3,7 +3,7 @@ import './leadership.css';
 import {data} from '../leadership/leadership-constants'
 
 // import Swiper core and required modules
-import { Pagination, EffectCoverflow } from 'swiper/modules';
+import { Pagination, Navigation, Scrollbar, A11y, EffectCoverflow } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -97,11 +97,31 @@ const Leadership = () => {
                             <button className="close-modal" onClick={()=>{setModal(false)}}>
                                 <AiOutlineClose/>
                             </button>
-
                             <div className="modal-title">{selectedItem.title}</div>
                             <div className="modal-description">{selectedItem.description}</div>
-                            <div className="modal-techstack-container">
-                            </div>
+                            
+                            <Swiper className="container leadership__container"
+                                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                                spaceBetween={40}
+                                slidesPerView={3}
+                                navigation
+                                pagination={{ clickable: true }}
+                                scrollbar={{ draggable: true }}
+                                onSwiper={(swiper) => console.log(swiper)}
+                                onSlideChange={() => console.log('slide change')}>
+
+                                        {
+                                            data.map(({id})=>{
+                                                return (
+                                                        <SwiperSlide key={id} className='leadership__images'>
+                                                        </SwiperSlide>  
+                                                )
+                                            })
+                                        }
+                            </Swiper>
+                            
+                            <div className="leadership-roles"></div>
+                            <div className="leadership-work"></div>
                         </div>                              
                 </div>
             )}
