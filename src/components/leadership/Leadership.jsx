@@ -110,14 +110,13 @@ const Leadership = () => {
                                 onSwiper={(swiper) => console.log(swiper)}
                                 onSlideChange={() => console.log('slide change')}>
 
-                                        {
-                                            data.map(({id})=>{
-                                                return (
-                                                        <SwiperSlide key={id} className='leadership__images'>
-                                                        </SwiperSlide>  
-                                                )
-                                            })
-                                        }
+                                {data.map(({ activities }) => (
+                                    <SwiperSlide  className='leadership__images'>
+                                    
+                                    {/* DISPLAY ALL THE ACTIVITIES IMAGES  */}
+
+                                    </SwiperSlide>
+                                 ))}
                             </Swiper>
                             
                             <div className="leadership-roles"></div>
