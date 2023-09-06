@@ -91,6 +91,7 @@ const Leadership = () => {
                     }
             </Swiper>
             
+            {/* VIEW DETAILS MODAL */}
             {modal && (
                 <div className="modal">
                         <div className="modal-content"> 
@@ -118,12 +119,15 @@ const Leadership = () => {
                                     </SwiperSlide>
                                  ))}
                             </Swiper>
-                            
-                            <div className="leadership-roles"></div>
-                            <div className="leadership-work"></div>
+
+                            {/* ROLES AND DESCRIPTION */}
+                            <div className="leadership-roles">
+                              <div>{selectedItem.role}</div>
+                            </div>
                         </div>                              
                 </div>
             )}
+
         </section>
         
     )

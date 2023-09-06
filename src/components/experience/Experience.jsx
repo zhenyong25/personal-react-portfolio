@@ -84,8 +84,8 @@ const Experience = () => {
                         <article className="experience__details">
                             <BsPatchCheckFill className="experience__details-icon"/>
                             <div>
-                                <h4>Tailwind</h4>
-                                <small className='text-light'>Intermediate</small>
+                                <h4>TailwindCSS</h4>
+                                <small className='text-light'>Experienced</small>
                             </div>
                         </article>
                         <article className="experience__details">
@@ -113,6 +113,20 @@ const Experience = () => {
                             <BsPatchCheckFill className="experience__details-icon"/>
                             <div>
                                 <h4>Next.js</h4>
+                                <small className='text-light'>Intermediate</small>
+                            </div>
+                        </article>
+                        <article className="experience__details">
+                            <BsPatchCheckFill className="experience__details-icon"/>
+                            <div>
+                                <h4>Vue.js</h4>
+                                <small className='text-light'>Intermediate</small>
+                            </div>
+                        </article>
+                        <article className="experience__details">
+                            <BsPatchCheckFill className="experience__details-icon"/>
+                            <div>
+                                <h4>AngularJS</h4>
                                 <small className='text-light'>Intermediate</small>
                             </div>
                         </article>
@@ -179,13 +193,13 @@ const Experience = () => {
                                 <small className='text-light'>Intermediate</small>
                             </div>
                         </article>
-                        {/* <article className="experience__details">
+                        <article className="experience__details">
                             <BsPatchCheckFill className="experience__details-icon"/>
                             <div>
-                                <h4>NextAuth</h4>
+                                <h4>Express.js</h4>
                                 <small className='text-light'>Beginner</small>
                             </div>
-                        </article> */}
+                        </article>
                     </div>
                 </SwiperSlide>
 
@@ -217,7 +231,14 @@ const Experience = () => {
                         <article className="experience__details">
                             <BsPatchCheckFill className="experience__details-icon"/>
                             <div>
-                                <h4>Metamask</h4>
+                                <h4>Web3.js</h4>
+                                <small className='text-light'>Beginner</small>
+                            </div>
+                        </article>
+                        <article className="experience__details">
+                            <BsPatchCheckFill className="experience__details-icon"/>
+                            <div>
+                                <h4>Ethers.js</h4>
                                 <small className='text-light'>Beginner</small>
                             </div>
                         </article>
@@ -316,6 +337,13 @@ const Experience = () => {
                             <BsPatchCheckFill className="experience__details-icon"/>
                             <div>
                                 <h4>Golang</h4>
+                                <small className='text-light'>Beginner</small>
+                            </div>
+                        </article>
+                        <article className="experience__details">
+                            <BsPatchCheckFill className="experience__details-icon"/>
+                            <div>
+                                <h4>Java</h4>
                                 <small className='text-light'>Beginner</small>
                             </div>
                         </article>

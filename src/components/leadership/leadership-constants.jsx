@@ -25,11 +25,25 @@ export const data = [
         activities: [garage1,garage2,garage3,garage4],
         role: {
             "VP Operations":{
-                description:["","",""]
+                description:["Lead a team of 50 operations members in Garage@EEE",
+                "Managed budget and reimbursement claims for Garage@EEE",
+                "Built a Project Storage System for students to store their projects in Garage@EEE",
+                "Built a Inventory Management System for students to search for dispensable/non-dispensable items quickly and borrow/return items efficiently",
+                "Managed budget and reimbursement claims for Garage@EEE"],
+                duration:"May 2022 - May2023"
             },
-            "Testing":{
-                description:["","",""]
+            "VP Logistics and Financial Controller, ENITIO":{
+                description:["Managed budget and reimbursement for ENITIO 2021, a freshmen transition orientation programme with an intake of 144 freshmen",
+                "Managed, planned and purchased welfare pack items for freshmen and committees",
+                "Lead a team of 5 subcommittees on event planning for Logistics",
+                "Planned and conducted Virtual Campus Tour and Food Hunt for the freshmen to familiarize and explore the school's surrounding virtually"],
+                duration:"Feb 2021 - Aug 2021"
             },
+            "Chief Tech, Escendo ":{
+                description:["Organized Machine Learning and Data Analytics Workshop for ESCENDO, a makeathon organized by Garage@EEE to provide fundamental knowledge for students to work on their prototype"],
+                duration:"Sep 2020 - Jan 2021"
+            },
+
         },
     },
     {
@@ -39,13 +53,17 @@ export const data = [
         description: 'IES is the premier engineering Institution in Singapore and is often called upon by the Government to provide feedback on professional engineering matters. Through close collaboration with the local universities and polytechnics, IES organises courses, seminars and talks for engineers and IES members to advance the continuous development of engineers.',
         activities: [ies1,ies2,ies3],
         role: {
-            "VP Operations":{
-                description:["","",""],
-                duration:""
+            "President":{
+                description:["Organized Welcome Week and Online Welcome Tea Session to attract freshmen to join IES-NTU",
+                "Lead a team of 40 committees ( 5 EXCOs, 11 Management Committees, 24 Subcommittees ) on event planning and execution",
+                "Oversee all the 9 event plannings ( Basic Python Workshop, Excel Workshop, Engineering Talk (JTC,SMF,A*), NTU Engineering Student's Sharing Session, Panel Discussion, Engineering V-Fest (Rolls Royce,Dyson,Chemtron,Green Radar), R Programming Workshop)",
+                "Collaborated with Mathworks to organize Simulink Workshop for IES students"],
+                duration:"Aug 2020 - Aug 2021"
             },
-            "Testing":{
-                description:["","",""],
-                duration:""
+            "Project Manager of Professional Development":{
+                description:[" Organized technical workshops such as Python and Excel workshop to enhance IES-NTU's members technical skills",
+                "Lead 10 Subcommittees in the division on event planning"],
+                duration:"Aug 2019-Aug 2020"
             },
         },
     },
@@ -56,9 +74,12 @@ export const data = [
         description: 'Rotaract Club is a club that strives to engage members in the field of community service, with an added emphasis on personal growth and development.',
         activities: [rotaract1],
         role: {
-            "Sub-Committee":{
-                description:["","",""],
-                duration:""
+            "Subcommittee (Community Service)":{
+                description:["Helped in kitchen cleaning at Willing Hearts",
+                "Packed and delivered gift bags door-to-door to elderlies",
+                "Helped in Ah Gong Ah Ma (AGAM) to celebrate CNY with elderlies at Beo Crescent",
+                "Helped in Janitor Appreciation Project (JAP) to show appreciation to our janitors"],
+                duration:"Aug 2020 - Aug 2021"
             }
         },
     },
