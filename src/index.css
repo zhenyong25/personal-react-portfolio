@@ -83,9 +83,9 @@ section > h2, section > h5 {
 
 section > h2 {
     color: var(--color-primary); 
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
-
+ 
 section > h5 {
     margin-top: 5rem; 
     padding-top: 1.6rem;

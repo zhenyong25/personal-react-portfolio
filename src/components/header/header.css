@@ -20,7 +20,7 @@ header {
 
 /* CTA */
 .cta {
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     display: flex;
 
     /* consistent spacing between the grid or "flex" items in the container */
@@ -55,15 +55,15 @@ header {
 .me {
     background: linear-gradient(135deg, var(--color-primary), transparent);
 
-    width: 22rem; 
-    height: 18rem;
+    width: 18rem; 
+    height: 15rem;
 
     /* positioning */
     position: absolute;
     left: 50%;     
     transform: translateX(-50%); 
 
-    margin-top: 2rem; 
+    margin-top: 1.5rem; 
     border-radius: 4rem 4rem 0 0; 
     overflow: hidden;
     padding: 0 1.5rem 0 1.5rem;
