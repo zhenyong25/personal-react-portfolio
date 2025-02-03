@@ -13,12 +13,25 @@ const Internship = () => {
         <section id="internship">
 
             <h5>Past Experiences</h5>
-            <h2>Internships</h2>
+            <h2>Work and Internships</h2>
         
             <VerticalTimeline 
                 animate="true"
             >
-
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    date="Dec 2024"
+                    icon={<MdWork/>}
+                    contentStyle={{ background: 'var(--color-primary-variant)',color:'#fff'}}
+                    contentArrowStyle={{ borderRight: '7px solid  var(--color-primary-variant)' }}
+                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                    id="SMRT"
+                >
+                    <h4 className="vertical-timeline-element-title">UI/UX Developer</h4>
+                    <h5 className="vertical-timeline-element-subtitle">SMRT, Singapore</h5>
+                    <h5 className="content">
+                    </h5>
+                </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     date="Jan-May 2022"
@@ -38,7 +51,6 @@ const Internship = () => {
                         </li>
                     </h5>
                 </VerticalTimelineElement>
-
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     date="Jan-June 2019"
@@ -59,7 +71,6 @@ const Internship = () => {
                         </li>
                     </h5>
                 </VerticalTimelineElement>
-                
             </VerticalTimeline>
         </section>
     )
